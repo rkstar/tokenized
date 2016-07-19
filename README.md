@@ -31,8 +31,8 @@ bucket.addToken('single-token')
 Retrieves a token from your bucket
 ```javascript
 const token = bucket.getToken()
-If no tokens are available, `token` will be `null`
 ```
+If no tokens are available, `token` will be `null`
 
 ### addTokenAtInterval(token, [interval], [intervalValue])
 Adds `token` to your bucket at a regular `interval`
