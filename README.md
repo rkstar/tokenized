@@ -14,9 +14,10 @@ Easily create and manage a bucket of tokens
 ### constructor
 Add a token or array of tokens to your bucket when you instantiate it
 ```javascript
-let bucket = new TokenBucket('single-token')
+const TokenBucket = require('tokenized')
+const bucket = new TokenBucket('single-token')
 // or
-let bucket = new TokenBucket(['token-one','token-two','token-three'])
+const bucket = new TokenBucket(['token-one','token-two','token-three'])
 ```
 The constructor will accept a single token or an array of tokens.  You can also instantiate
 the `TokenBucket` class without a token if you do not have/need one right away.
@@ -29,8 +30,9 @@ bucket.addToken('single-token')
 ### getToken()
 Retrieves a token from your bucket
 ```javascript
-let token = bucket.getToken()
+const token = bucket.getToken()
 If no tokens are available, `token` will be `null`
+```
 
 ### addTokenAtInterval(token, [interval], [intervalValue])
 Adds `token` to your bucket at a regular `interval`
