@@ -1,0 +1,30 @@
+{
+  "name": "tokenizr",
+  "version": "1.0.0",
+  "description": "A token bucket to allow throttling for messaging applications.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkstar/tokenizr.git"
+  },
+  "keywords": [
+    "token bucket",
+    "throttling",
+    "token",
+    "messaging"
+  ],
+  "author": "David Fudge <rkstar@mac.com> (https://github.com/rkstar)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkstar/tokenizr/issues"
+  },
+  "homepage": "https://github.com/rkstar/tokenizr#readme",
+  "dependencies": {
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {}
+}
