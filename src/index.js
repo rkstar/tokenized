@@ -1,7 +1,7 @@
 const _ = require('lodash')
 let instance = null
 
-class Tokenizr {
+class Tokenized {
   constructor(){
     instance = instance || null
     return instance
@@ -131,5 +131,4 @@ class Tokenizr {
 
 }
 
-const TokenizrInstance = new Tokenizr()
-module.exports = TokenizrInstance
+module.exports = Tokenized
