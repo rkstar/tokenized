@@ -1,6 +1,6 @@
 {
   "name": "tokenized",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A token bucket to allow throttling for messaging applications.",
   "main": "src/index.js",
   "scripts": {
