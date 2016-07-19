@@ -1,5 +1,5 @@
-Tokenizr
-===============
+Tokenized
+=========
 
 Easily create and manage a bucket of tokens
 
@@ -7,7 +7,7 @@ Easily create and manage a bucket of tokens
 * lodash
 
 ## Usage
-`npm install --save tokenizr`
+`npm install --save tokenized`
 
 ## Methods
 
