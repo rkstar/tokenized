@@ -1,0 +1,114 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/rkstar/.nvm/versions/node/v6.2.2/bin/node',
+1 verbose cli   '/Users/rkstar/.nvm/versions/node/v6.2.2/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.9.6
+3 info using node@v6.2.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/rkstar/dev/npm/tokenizr',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/rkstar/.npm/tokenizr/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/rkstar/.npm correctMkdir not in flight; initializing
+10 info lifecycle tokenizr@1.0.0~prepublish: tokenizr@1.0.0
+11 silly lifecycle tokenizr@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/rkstar/.npm/tokenizr/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/rkstar/dev/npm/tokenizr' ]
+13 verbose tarball /Users/rkstar/.npm/tokenizr/1.0.0/package.tgz
+14 verbose folder /Users/rkstar/dev/npm/tokenizr
+15 verbose addLocalTarball adding from inside cache /Users/rkstar/.npm/tokenizr/1.0.0/package.tgz
+16 verbose correctMkdir /Users/rkstar/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd tokenizr@1.0.0
+18 verbose afterAdd /Users/rkstar/.npm/tokenizr/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/rkstar/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/rkstar/.npm/tokenizr/1.0.0/package/package.json written
+21 silly publish { name: 'tokenizr',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'A token bucket to allow throttling for messaging applications.',
+21 silly publish   main: 'src/index.js',
+21 silly publish   scripts:
+21 silly publish    { start: 'node src/index.js',
+21 silly publish      test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/rkstar/tokenizr.git' },
+21 silly publish   keywords: [ 'token bucket', 'throttling', 'token', 'messaging' ],
+21 silly publish   author:
+21 silly publish    { name: 'David Fudge',
+21 silly publish      email: 'rkstar@mac.com',
+21 silly publish      url: 'https://github.com/rkstar' },
+21 silly publish   license: 'ISC',
+21 silly publish   bugs: { url: 'https://github.com/rkstar/tokenizr/issues' },
+21 silly publish   homepage: 'https://github.com/rkstar/tokenizr#readme',
+21 silly publish   dependencies: { lodash: '^4.13.1' },
+21 silly publish   devDependencies: {},
+21 silly publish   readme: 'Tokenizr\n===============\n\nEasily create and manage a bucket of tokens\n\n## Package Dependencies\n* lodash\n\n## Usage\n`npm install --save tokenizr`\n\n## Methods\n\n### constructor\nAdd a token or array of tokens to your bucket when you instantiate it\n```javascript\nlet bucket = new TokenBucket(\'single-token\')\n// or\nlet bucket = new TokenBucket([\'token-one\',\'token-two\',\'token-three\'])\n```\nThe constructor will accept a single token or an array of tokens.  You can also instantiate\nthe `TokenBucket` class without a token if you do not have/need one right away.\n\n### addToken(token)\nAdds a `token` to your bucket\n```javascript\nbucket.addToken(\'single-token\')\n```\n### getToken()\nRetrieves a token from your bucket\n```javascript\nlet token = bucket.getToken()\nIf no tokens are available, `token` will be `null`\n\n### addTokenAtInterval(token, [interval], [intervalValue])\nAdds `token` to your bucket at a regular `interval`\n```javascript\nbucket.addTokenAtInterval(\'auto-token\', 5, \'seconds\')\n```\n* token => your token to add to the bucket\n* interval => **default 1** (number) the frequency to add this token to the bucket\n* intervalValue => **default ms** (string) value of the frequency number. options are:\n`ms / milliseconds` => milliseconds\n`s / seconds` => seconds\n`m / minutes` => minutes\n`h / hours` => hours\n`d / days` => days\n\n### stopAddingToken(token)\nStops the automatic adding of `token` that was started by using `addTokenAtInterval`\n```javascript\nTokenBucket.stopAddingToken(\'auto-token\')\n```\n\n## Properties\n\n### limit\nSet a limit for the number of tokens in your bucket at any one time.  No tokens will be added above the limit.',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'f248e5743b543b7311d23cf3d1f7b840db9c3865',
+21 silly publish   _id: 'tokenizr@1.0.0',
+21 silly publish   _shasum: '61b2285b30dfcbb489df1597c11623f384bb88a0',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name tokenizr
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'tokenizr',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'tokenizr',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/tokenizr
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/rkstar/.npm/tokenizr/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/tokenizr
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 1:16:01 AM
+33 verbose request using bearer token for auth
+34 verbose request id 6fb72cbac0d21c9e
+35 http request PUT https://registry.npmjs.org/tokenizr
+36 http 403 https://registry.npmjs.org/tokenizr
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '102',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Tue, 19 Jul 2016 05:16:02 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-iad2636-IAD',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1468905361.671866,VS0,VE333',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/rkstar/.npm/registry.npmjs.org/tokenizr on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "tokenizr". Are you logged in as the correct user? : tokenizr
+40 verbose stack     at makeError (/Users/rkstar/.nvm/versions/node/v6.2.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/rkstar/.nvm/versions/node/v6.2.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/Users/rkstar/.nvm/versions/node/v6.2.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/Users/rkstar/.nvm/versions/node/v6.2.2/lib/node_modules/npm/node_modules/request/request.js:200:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/rkstar/.nvm/versions/node/v6.2.2/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+40 verbose stack     at emitOne (events.js:101:20)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/rkstar/.nvm/versions/node/v6.2.2/lib/node_modules/npm/node_modules/request/request.js:988:12)
+41 verbose statusCode 403
+42 verbose pkgid tokenizr
+43 verbose cwd /Users/rkstar/dev/npm/tokenizr
+44 error Darwin 15.6.0
+45 error argv "/Users/rkstar/.nvm/versions/node/v6.2.2/bin/node" "/Users/rkstar/.nvm/versions/node/v6.2.2/bin/npm" "publish"
+46 error node v6.2.2
+47 error npm  v3.9.6
+48 error code E403
+49 error you do not have permission to publish "tokenizr". Are you logged in as the correct user? : tokenizr
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
