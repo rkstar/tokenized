@@ -34,7 +34,7 @@ const token = bucket.getToken()
 ```
 If no tokens are available, `token` will be `null`
 
-### addTokenAtInterval(token, [interval], [intervalValue])
+### addTokenAtInterval({token, [interval], [intervalValue]})
 Adds `token` to your bucket at a regular `interval`
 ```javascript
 bucket.addTokenAtInterval('auto-token', 5, 'seconds')
